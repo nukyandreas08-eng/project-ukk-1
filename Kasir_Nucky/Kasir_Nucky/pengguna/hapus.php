@@ -1,0 +1,1 @@
+<?php include "../includes/cek_session.php";include "../config/koneksi.php";hanya_role('Administrator');$id=(int)($_GET['id']??0);if($id!==$_SESSION['id_pengguna'])mysqli_query($koneksi,"DELETE FROM tb_pengguna WHERE id_pengguna=$id");header("Location:index.php");exit;?>

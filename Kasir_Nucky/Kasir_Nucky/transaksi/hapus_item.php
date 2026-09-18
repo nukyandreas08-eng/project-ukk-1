@@ -1,0 +1,1 @@
+<?php include "../includes/cek_session.php";hanya_role('Administrator','Petugas');$id=(int)($_GET['id']??0);unset($_SESSION['keranjang'][$id]);header("Location:index.php");exit;?>

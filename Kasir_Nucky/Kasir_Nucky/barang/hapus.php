@@ -1,0 +1,1 @@
+<?php include "../includes/cek_session.php"; include "../config/koneksi.php"; hanya_role('Administrator'); $id=(int)($_GET['id']??0); mysqli_query($koneksi,"DELETE FROM tb_barang WHERE id_barang=$id"); header("Location:index.php"); exit; ?>

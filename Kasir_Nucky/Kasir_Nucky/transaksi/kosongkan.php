@@ -1,0 +1,1 @@
+<?php include "../includes/cek_session.php";hanya_role('Administrator','Petugas');$_SESSION['keranjang']=[];header("Location:index.php");exit;?>
